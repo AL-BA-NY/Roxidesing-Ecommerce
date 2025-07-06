@@ -4,7 +4,7 @@ Este diagrama representa el flujo de proceso en el sistema propuesto para la emp
 
 ### Descripción de los elementos
 ---
-####Proceso del Afiliado (Usuario)
+#### Proceso del Afiliado (Usuario)
 
 **Registro de usuario**: El proceso inicia con el registro del usuario.
 Inicio de sesión: El usuario accede al sistema.
