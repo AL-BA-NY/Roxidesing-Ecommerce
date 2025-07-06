@@ -2,7 +2,7 @@
 
 Este diagrama representa el flujo de proceso en el sistema propuesto para la empresa **Roxy Design**, que se dedica a la venta de bisutería a través de una plataforma en línea. A continuación, se describe el proceso paso a paso.
 
-###Descripción de los elementos
+### Descripción de los elementos
 ---
 ####Proceso del Afiliado (Usuario)
 
