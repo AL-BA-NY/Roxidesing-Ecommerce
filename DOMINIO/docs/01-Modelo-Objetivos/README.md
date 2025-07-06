@@ -14,7 +14,7 @@ El modelo de objetivos permite visualizar, de manera jerárquica, las metas que 
 
 ## Archivos incluidos
 
-- `objetivos.png`: Diagrama jerárquico de los objetivos del negocio.
+- `Modelo de objetivos.png`: Diagrama jerárquico de los objetivos del negocio.
 - `objetivos.md`: Documento que describe cada objetivo con mayor detalle.
 
 ## Propósito del modelo
