@@ -11,7 +11,7 @@ Representa al cliente que utiliza la plataforma para realizar compras.
 
 - **Atributos:** id, nombre, correo, contraseña.
 
-- **Métodos**:
+**Métodos**:
 -  iniciarSesion()
 -  cerrarSesion()
 
