@@ -14,7 +14,6 @@ El modelo describe cómo la empresa realiza sus actividades principales, permiti
 
 ## Archivos incluidos
 
-- `procesos-negocio.uml`: Archivo editable del diagrama de procesos.
 - `procesos-negocio.png`: Imagen del diagrama de procesos.
 - `procesos.md`: Documento que explica cada proceso y su función dentro del negocio.
 
