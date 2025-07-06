@@ -8,76 +8,112 @@ Este modelo representa los objetos principales del sistema de ventas en línea d
 
 #### 1. Usuario
 Representa al cliente que utiliza la plataforma para realizar compras.  
-**Atributos:**
-- nombre
-- correo
-- contraseña
+
+- **Atributos:** id, nombre, correo, contraseña.
+- **Métodos**:
+-  iniciarSesion()
+-  cerrarSesion()
 
 **Relaciones:**
-- Un usuario tiene un carrito asociado.
-- Un usuario puede generar múltiples pedidos.
+Un Usuario puede ser un Administrador o un Afiliado. Esta es una relación de herencia o generalización, donde Administrador y Afiliado son tipos específicos de Usuario. Ambos pueden iniciar y cerrar sesión.
 
 ---
 
-#### 2. Carrito
-Contenedor temporal de productos seleccionados por el usuario antes de confirmar una compra.  
+#### 2. Afiliado
+Un tipo de usuario que interactúa con tiendas y productos.
+
 **Atributos:**
-- id
-- items[] (lista de productos)
+- dirección
+- teléfono
+
+**Métodos:**
+- actualizarPerfil()
+- verPedidos()
+- editarCarrito()
+- gestionarProductos()
+- revisarPedidos()
+- accederATienda()
+- registrarPago()
 
 **Relaciones:**
-- Está vinculado a un usuario.
-- Se conecta con productos agregados al carrito.
+
+- "accede a" una Tienda.
+- "recibe" un Pedido.
+- "tiene" un Carrito.
 
 ---
 
-#### 3. Producto
-Elemento que se ofrece en la tienda para ser comprado.  
+#### 3 Administrador
+Otro tipo de usuario con permisos de gestión.
+
+**Métodos:** 
+- iniciarSesion()
+- revisarPedido()
+- confirmarPedido()
+-  modificarInventario()
+
+**Relaciones:**
+"revisa" un Pedido.
+
+---
+
+#### 4. Tienda
+
+
+Representa un establecimiento o vendedor.
+
 **Atributos:**
 - id
 - nombre
+- descripcion
 - precio
 - stock
+- imagen
+  
+**Métodos:**
+
+- agregarProducto()
+- verInventario()
+
 
 **Relaciones:**
-- Los productos pueden ser añadidos al carrito.
-- También son parte de los pedidos confirmados.
+
+- "contiene" Productos.
+- "ofrece" ItemCarrito.
 
 ---
 
-#### 4. Pedido
-Representa una compra realizada por el usuario.  
+#### 5. Carrito
+Almacena los ítems que un usuario desea comprar.
+
 **Atributos:**
+
 - id
-- estado (pendiente, aprobado, rechazado)
-- fecha
+- total.
 
+**Métodos:**
+- calcularTotal()
+- vaciar()
+- agregarItem()
+  
 **Relaciones:**
-- Está vinculado a un usuario.
-- Contiene productos seleccionados desde el carrito.
-- Al ser aprobado, genera un recibo.
-
----
-
-#### 5. Recibo
-Documento generado automáticamente cuando un pedido es aprobado.  
-**Atributos:**
-- id
-- total
-- fecha
-
-**Relaciones:**
-- Cada recibo está asociado a un pedido confirmado.
+- "contiene" ItemCarrito.
 
 ---
 
 ### Flujo de relaciones
 
-1. El usuario crea una cuenta e inicia sesión.
-2. Navega por el catálogo y agrega productos al carrito.
-3. Confirma el pedido y este queda registrado con estado "pendiente".
-4. El administrador revisa el pedido y puede aprobarlo o rechazarlo.
-5. Si el pedido es aprobado, se genera un recibo automáticamente.
+1.El Afiliado inicia sesión y accede a una Tienda.
+
+2.Selecciona Productos y los agrega al Carrito.
+
+3.Realiza un Pedido desde el carrito.
+
+4.El Pedido requiere un Pago, que el afiliado registra.
+
+5.Tras el pago, se genera un Recibo.
+
+6.El Administrador revisa y confirma el pedido.
 
 ---
 
