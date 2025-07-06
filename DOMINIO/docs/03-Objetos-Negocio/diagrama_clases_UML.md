@@ -51,6 +51,7 @@ Otro tipo de usuario con permisos de gestión.
 -  modificarInventario()
 
 **Relaciones:**
+
 "revisa" un Pedido.
 
 ---
@@ -95,6 +96,7 @@ Almacena los ítems que un usuario desea comprar.
 - agregarItem()
   
 **Relaciones:**
+
 - "contiene" ItemCarrito.
 
 ---
