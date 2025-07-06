@@ -19,6 +19,7 @@ Agregar productos al carrito: El usuario selecciona y añade productos a su carr
 #### Proceso del Administrador
 
 **Revisar pedido:** El administrador recibe y revisa el pedido realizado por el afiliado.
+
 **Decisión: ¿Pedido aprobado?:** Se evalúa si el pedido es aprobado o no.
 
 - Si el pedido es aprobado (Sí):
