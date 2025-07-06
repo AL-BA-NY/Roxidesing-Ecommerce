@@ -14,7 +14,6 @@ Se incluye un organigrama que muestra la estructura organizacional de la empresa
 ## Archivos incluidos
 
 - `organigrama.png`: Imagen del organigrama de la empresa.
-- `matriz-unidades-vs-procesos.xlsx`: Matriz que relaciona unidades/actores con los procesos del negocio.
 - `actores.md`: Documento que describe los actores identificados y su función dentro del sistema.
 
 ## Propósito del modelo
