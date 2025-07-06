@@ -13,11 +13,11 @@ Este modelo permite identificar las estructuras de datos que la aplicación gest
 
 ## Archivos incluidos
 
-- `clases.uml`: Archivo editable del diagrama de clases.
 - `clases.png`: Imagen del diagrama de clases.
-- `matriz-objetos-vs-procesos.xlsx`: Matriz que relaciona objetos con procesos del negocio.
-- `objetos.md`: Descripción detallada de cada objeto de negocio.
-
+- `matriz-objetos-vs-procesos.png`: Matriz que relaciona objetos con procesos del negocio.
+- `diagrama_clases_UML.md`: Descripción detallada de cada objeto de negocio.
+- `objetos_vs_procesos.md`: Descripción detallada de objetos y su comparación con procesos.
+  
 ## Propósito del modelo
 
 El propósito de este modelo es proporcionar una visión clara de los elementos que forman parte del dominio de la aplicación y cómo interactúan entre sí, estableciendo las bases para el desarrollo del modelo de datos y la lógica del sistema.
