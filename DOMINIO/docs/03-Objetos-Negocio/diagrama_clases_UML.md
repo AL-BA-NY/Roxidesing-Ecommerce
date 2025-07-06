@@ -10,12 +10,10 @@ Este modelo representa los objetos principales del sistema de ventas en línea d
 Representa al cliente que utiliza la plataforma para realizar compras.  
 
 - **Atributos:** id, nombre, correo, contraseña.
+
 - **Métodos**:
 -  iniciarSesion()
 -  cerrarSesion()
-
-**Relaciones:**
-Un Usuario puede ser un Administrador o un Afiliado. Esta es una relación de herencia o generalización, donde Administrador y Afiliado son tipos específicos de Usuario. Ambos pueden iniciar y cerrar sesión.
 
 ---
 
